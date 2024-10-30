@@ -1,0 +1,111 @@
+{
+  "css reset": {
+    "prefix": "css",
+    "body": "* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nbody {\n    min-height: 100vh;\n}",
+    "description": "Global css reset"
+  },
+  "react component": {
+    "prefix": "rr",
+    "body": "const ${1:ComponentName} = () => {\n    return (\n        <div>\n            $2\n        </div>\n    );\n};\n\nexport default ${1:ComponentName};",
+    "description": "React component"
+  },
+  "useState()": {
+    "prefix": "us",
+    "body": [
+      "const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState($2);",
+      "$0"
+    ],
+    "description": "useState()"
+  },
+  "useState(true)": {
+    "prefix": "ust",
+    "body": [
+      "const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState(true);",
+      "$0"
+    ],
+    "description": "useState(true)"
+  },
+  "useState(false)": {
+    "prefix": "usf",
+    "body": [
+      "const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState(false);",
+      "$0"
+    ],
+    "description": "useState(false)"
+  },
+  "useState(null)": {
+    "prefix": "usn",
+    "body": [
+      "const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState(null);",
+      "$0"
+    ],
+    "description": "useState(null)"
+  },
+  "use effect": {
+    "prefix": "ue",
+    "body": "useEffect(() => {\n    $1\n}, [$2]);",
+    "description": "Use effect"
+  },
+  "for loop in c": {
+    "prefix": "fc",
+    "body": "for (int i = 0; i < ${1:count}; i++) {\n    $2\n}",
+    "description": "For loop in c"
+  },
+  "for loop in js": {
+    "prefix": "fj",
+    "body": "for (let i = 0; i < ${1:count}; i++) {\n    $2\n}",
+    "description": "For loop in js"
+  },
+  "if": {
+    "prefix": "ii",
+    "body": "if (${1:condition}) {\n    $2\n}",
+    "description": "If statement"
+  },
+  "sjs": {
+    "prefix": "sjs",
+    "body": "<script src=\"${1:script.js}\" defer></script>",
+    "description": "Script tag"
+  },
+  "fff": {
+    "prefix": "fff",
+    "body": "display: flex;\njustify-content: center;\nalign-items: center;",
+    "description": "Function"
+  },
+  "vv": {
+    "prefix": "vvv",
+    "body": "<template>\n    \n</template>\n\n\n<script setup>\n\n</script>\n\n\n<style scoped>\n\n</style>",
+    "description": "vue structure"
+  },
+  "oo": {
+    "prefix": "oo",
+    "body": "outline: 1px solid red;",
+    "description": "outline"
+  },
+  "yy": {
+    "prefix": "yy",
+    "body": "outline: 1px solid yellow;",
+    "description": "outline2"
+  },
+  "fill": {
+    "prefix": "fo",
+    "body": "fill: $1;\nopacity: $2; \n",
+    "description": "Use effect"
+  },
+  "template": {
+    "prefix": "tmp",
+    "body": "<template>$1</template>",
+    "description": "Use effect"
+  },
+  "Computed": {
+    "prefix": "cmp",
+    "body": "const $1 = computed(() => {\n \t$2\n})"
+  },
+  "Mounted": {
+    "prefix": "mnt",
+    "body": "onMounted(() => {\n \t$1\n})"
+  },
+  "arrow": {
+    "prefix": "arr",
+    "body": "($1) => {\n \t$2\n}"
+  }
+}
