@@ -73,3 +73,5 @@ vim.opt.shortmess:append("A") -- Onemogućava dijalog o swap fajlu
 
 vim.g.user_emmet_expandabbr_key = "<C-y>,"
 vim.g.user_emmet_leader_key = "<C-y>"
+
+vim.opt.clipboard = "unnamedplus"
