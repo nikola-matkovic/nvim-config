@@ -74,4 +74,10 @@ vim.opt.shortmess:append("A") -- Onemogućava dijalog o swap fajlu
 vim.g.user_emmet_expandabbr_key = "<C-y>,"
 vim.g.user_emmet_leader_key = "<C-y>"
 
+-- Povećaj indentaciju sa Tab
+vim.api.nvim_set_keymap("v", "<Tab>", ">gv", { noremap = true, silent = true })
+-- Smanji indentaciju sa Shift+Tab
+vim.api.nvim_set_keymap("v", "<S-Tab>", "<gv", { noremap = true, silent = true })
+vim.opt.whichwrap:append("<,>,[,],h,l")
+
 vim.opt.clipboard = "unnamedplus"
